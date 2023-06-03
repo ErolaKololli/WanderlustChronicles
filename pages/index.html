@@ -23,7 +23,6 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
-
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
@@ -34,7 +33,8 @@
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <img class="logo" src="../assets/images/logo.PNG" alt="logo">
         <button
           class="navbar-toggler"
           type="button"
@@ -49,13 +49,13 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="blog.html">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="discover.html">Discover</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -65,14 +65,14 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Dropdown link
+                More
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
+                <li><a class="dropdown-item" href="resources.html">Resources</a></li>
+                <li><a class="dropdown-item" href="#">Contact us</a></li>
+                <!-- <li>
                   <a class="dropdown-item" href="#">Something else here</a>
-                </li>
+                </li> -->
               </ul>
             </li>
           </ul>
@@ -82,109 +82,94 @@
     <main id="main-content">
       <div class="swiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="../assets/images/blog.jpg" /></div>
-          <div class="swiper-slide"><img src="../assets/images/destinations.jpg" /></div>
-          <div class="swiper-slide"><img src="../assets/images/resources.jpg" /></div>
+          <div class="swiper-slide"><img src="../assets/images/mesut-kaya-eOcyhe5-9sQ-unsplash.jpg" /></div>
+          <div class="swiper-slide"><img src="../assets/images/jack-anstey-XVoyX7l9ocY-unsplash.jpg" /></div>
+          <div class="swiper-slide"><img src="../assets/images/stefan-stefancik-0wMmxNB6Xzc-unsplash.jpg" /></div>
+          <div class="swiper-slide"><img src="../assets/images/pexels-pixabay-278600.jpg" /></div>
+        </div>
+        <div class="slider-text">
+          <h2>Wanderlust Chronicles</h2>
+          <p>Welcome!</p>
+          <p>This is the right place for all travellers</p>
         </div>
         <div class="swiper-pagination"></div>
-
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
       </div>
-
-      <!-- <div class="container">
-        <div class="Background-image">
-          <img
-            class="hero-image"
-            src="images/hero-image.jpg"
-            alt="Background Image"
-          />
-          <div class="hero-content">
-            <h1>Wanderlust Chronicles</h1>
-            <p>Where nature's sweetest children meet</p>
+      <div class="about-section">
+          <div class="separator-line">
           </div>
+          <div class="about-text">
+            <h2>Who are we?</h2>
+            <p> We are a passionate team of travel enthusiasts who believe in the power of exploration and the joy of discovering new cultures, landscapes, and experiences.</p>
+            <p>With years of combined travel experience, we aim to inspire and guide fellow adventurers in their quest for unforgettable journeys. Whether you are a seasoned traveler or just starting your travel journey, our platform offers a wealth of resources, tips, and inspiration to help you plan your next adventure.</p>
+            <p>From hidden gems to popular destinations, we curate a collection of travel guides, practical tips, and insider recommendations to make your travels smooth, enjoyable, and filled with incredible memories. Join us on this exciting journey as we share our stories, insights, and recommendations to help you make the most of your travels.</p>  
+          </div>
+         <div class="separator-line"></div>
         </div>
-      </div>
-
+    </main>
       <section class="travel-section">
-        <h2>Travel Inspiration & Resources</h2>
-        <div class="travel-grid">
-          <div class="travel-item">
-            <h3>Blog</h3>
-            <img src="images/blog.jpg" alt="Blog Thumbnail" />
-            <p>Read our latest travel stories and tips.</p>
-            <a href="#">View stories</a>
+        <h2 class="header-title text-center">Travel Inspiration & Resources</h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-6">
+            <div class="travel-item">
+              <img src="../assets/images/blog.jpg" alt="Blog Thumbnail" class="img-fluid" />
+              <p>Read our latest travel stories and tips.</p>
+              <a href="#" class="btn btn-primary mx-auto">View stories</a>
+            </div>
           </div>
-          <div class="travel-item">
-            <h3>Destinations</h3>
-            <img src="images/destinations.jpg" alt="Destinations Thumbnail" />
-            <p>Discover new places.</p>
-            <a href="#">Explore the World</a>
+          <div class="col-lg-4 col-md-6">
+            <div class="travel-item">
+              <img src="../assets/images/destinations.jpg" alt="Destinations Thumbnail" class="img-fluid" />
+              <p>Discover new places.</p>
+              <a href="#" class="btn btn-primary mx-auto">Explore the World</a>
+            </div>
           </div>
-          <div class="travel-item">
-            <h3>Resources</h3>
-            <img src="images/resources.jpg" alt="Resources Thumbnail" />
-            <p>Find helpful travel resources and tools.</p>
-            <a href="#">Plan your trip</a>
+          <div class="col-lg-4 col-md-6">
+            <div class="travel-item" >
+              <img src="../assets/images/felix-rostig-UmV2wr-Vbq8-unsplash.jpg" alt="Resources Thumbnail" class="img-fluid" />
+              <p>Find helpful travel resources and tools.</p>
+              <a href="#" class="btn btn-primary mx-auto">Plan your trip</a>
+            </div>
           </div>
         </div>
-      </section> -->
+      </section>
+      <header class="header-1">
+        <div class="container">
+          <h1 class="header-title text-center">The Benefits of Travel and Hiking</h1>
+          <p class="header-subtitle text-center"></p>
+          <div class="row justify-content-center image-gallery">
+            <div class="col-sm-6 col-md-4">
+              <a href="#" class="image-link">
+                <img src="../assets/images/mantas-hesthaven-_g1WdcKcV3w-unsplash.jpg" alt="Image 1" class="img-fluid">
+                <div class="title-1">Peace of Mind</div>
+              </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <a href="#" class="image-link">
+                <img src="../assets/images/pietro-de-grandi-T7K4aEPoGGk-unsplash.jpg" alt="Image 2" class="img-fluid">
+                <div class="title-1">Physical Wellness</div>
+              </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <a href="#" class="image-link">
+                <img src="../assets/images/felix-rostig-UmV2wr-Vbq8-unsplash.jpg" alt="Image 3" class="img-fluid">
+                <div class="title-1">Socialization</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      
 
-      <!-- Hero -->
-      <div
-        class="d-flex container-fluid"
-        lc-helper="background"
-        style="
-          height: 50vh;
-          background: url(https://images.unsplash.com/photo-1530466951295-f13b9bceb117?ixlib=rb-1.2.1&amp;q=90&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1980&amp;h=768&amp;fit=crop&amp;ixid=eyJhcHBfaWQiOjM3ODR9)
-            center / cover no-repeat;
-        "
-      ></div>
-      <div class="container p-5 bg-light" style="margin-top: -100px">
-        <div class="row">
-          <div class="col-md-4 text-center align-self-center">
-            <div class="lc-block border-end border-2">
-              <div editable="rich">
-                <p class="display-4 text-secondary">WHY?</p>
-              </div>
-            </div>
-            <!-- /lc-block -->
-          </div>
-          <!-- /col -->
-          <div class="col-md-8">
-            <div class="lc-block">
-              <div editable="rich">
-                <p class="display-4">
-                  Think different and create a wonderful kind of digital agency.
-                </p>
-              </div>
-            </div>
-            <!-- /lc-block -->
-          </div>
-          <!-- /col -->
-        </div>
-        <div class="row">
-          <div class="col-md-9 offset-md-1">
-            <div class="lc-block mt-5">
-              <div editable="rich">
-                <p class="lead text-secondary">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                  et metus id ligula malesuada placerat sit amet quis enim.
-                  Aliquam erat volutpat. In pellentesque scelerisque
-                  auctor.&nbsp;
-                </p>
-                <p class="lead text-secondary">
-                  Ut porta lacus eget nisi fermentum lobortis. Vestibulum
-                  facilisis tempor ipsum, ut rhoncus magna ultricies laoreet.
-                  Proin vehicula erat eget libero accumsan iaculis.
-                </p>
-              </div>
-            </div>
-            <!-- /lc-block -->
-          </div>
-          <!-- /col -->
-        </div>
-      </div>
+      
+ 
+      
+      
+
+      
+      
+
 
       <footer class="footer-main">
         <div class="container">
@@ -226,7 +211,7 @@
                   <h5>Email</h5>
                   <p>
                     <a href="mailto:" style="text-decoration: none"
-                      >collab@codewithfaraz.com</a
+                      ></a
                     >
                   </p>
                 </div>
@@ -234,6 +219,8 @@
             </div>
           </div>
         </div>
+
+
 
         <!-- Copyright Footer -->
         <footer class="bg-dark text-center text-white">
@@ -282,7 +269,7 @@
             class="text-center p-3"
             style="background-color: rgba(0, 0, 0, 0.2)"
           >
-            codewithfaraz © 2023 All Rights Reserved.
+           © 2023 All Rights Reserved.
           </div>
           <!-- Copyright -->
         </footer>
@@ -294,7 +281,7 @@
       const swiper = new Swiper(".swiper", {
         loop: true,
         autoplay: {
-          delay: 2500,
+          delay: 1500,
         },
         pagination: {
           el: ".swiper-pagination",

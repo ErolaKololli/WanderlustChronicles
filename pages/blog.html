@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+    <div class="container-fluid">
+      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+      <img class="logo" src="../assets/images/logo.PNG" alt="logo">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="discover.html">Discover</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              More
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="resources.html">Resources</a></li>
+              <li><a class="dropdown-item" href="#">Contact us</a></li>
+              <!-- <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li> -->
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+     <!-- Hero -->
+     <!-- <div
+     class="d-flex container-fluid"
+     lc-helper="background"
+     style="
+       height: 50vh;
+       background:url(../assets/images/hero-image.jpg)
+       center / cover no-repeat;
+     "
+   ></div>
+   <div class="container p-5 bg-light" style="margin-top: -100px">
+     <div class="row">
+       <div class="col-md-4 text-center align-self-center">
+         <div class="lc-block border-end border-2">
+           <div editable="rich">
+             <p class="display-4 text-secondary">WHY?</p>
+           </div>
+         </div>
+         
+       </div>
+       <div class="col-md-8">
+         <div class="lc-block">
+           <div editable="rich">
+             <p class="display-4">
+               Think different and create a wonderful kind of digital agency.
+             </p>
+           </div>
+         </div>
+       
+       </div>
+       
+     </div>      
+     <div class="row">
+        <div class="col-md-9 offset-md-1">
+          <div class="lc-block mt-5">
+            <div editable="rich">
+              <p class="lead text-secondary">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                et metus id ligula malesuada placerat sit amet quis enim.
+                Aliquam erat volutpat. In pellentesque scelerisque
+                auctor.&nbsp;
+              </p>
+              <p class="lead text-secondary">
+                Ut porta lacus eget nisi fermentum lobortis. Vestibulum
+                facilisis tempor ipsum, ut rhoncus magna ultricies laoreet.
+                Proin vehicula erat eget libero accumsan iaculis.
+              </p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div> -->
+    <div class="main-content">
+      <div class="blog-hero-image-container">
+      <div class="blog-hero-image">
+        <div class="blog-hero-text">
+          <h1>Read Our Stories</h1>
+          <p>Get a glimpse of people's experiences</p>
+        </div>
+      </div> 
+    </div> 
+    <div class="container">
+      <div class="user-story-container">
+        <div class="user-story">
+          <div class="image">
+            <img src="../assets/images/pexels-daniel-xavier-1239291.jpg" alt="User Image" class="img-fluid">
+          </div>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies rutrum nisi, eget posuere arcu
+              blandit sit amet. Donec consectetur tortor id augue iaculis malesuada.</p>
+            <p>Nullam in maximus mi. Cras quis enim purus. Fusce nec libero id turpis dapibus fringilla at vel mi.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies rutrum nisi, eget posuere arcu
+              blandit sit amet. Donec consectetur tortor id augue iaculis malesuada.</p>
+            <p>Nullam in maximus mi. Cras quis enim purus. Fusce nec libero id turpis dapibus fringilla at vel mi.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies rutrum nisi, eget posuere arcu
+              blandit sit amet. Donec consectetur tortor id augue iaculis malesuada.</p>
+            <p>Nullam in maximus mi. Cras quis enim purus. Fusce nec libero id turpis dapibus fringilla at vel mi.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies rutrum nisi, eget posuere arcu
+              blandit sit amet. Donec consectetur tortor id augue iaculis malesuada.</p>
+            <p>Nullam in maximus mi. Cras quis enim purus. Fusce nec libero id turpis dapibus fringilla at vel mi.</p>
+          </div>
+        </div>
+      </div>
+      <div class="user-story-container">
+        <div class="user-story">
+          <div class="image">
+            <img src="../assets/images/gabriel-silverio-u3WmDyKGsrY-unsplash.jpg" alt="User Image" class="img-fluid">
+          </div>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies rutrum nisi, eget posuere arcu
+              blandit sit amet. Donec consectetur tortor id augue iaculis malesuada.</p>
+            <p>Nullam in maximus mi. Cras quis enim purus. Fusce nec libero id turpis dapibus fringilla at vel mi.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies rutrum nisi, eget posuere arcu
+              blandit sit amet. Donec consectetur tortor id augue iaculis malesuada.</p>
+            <p>Nullam in maximus mi. Cras quis enim purus. Fusce nec libero id turpis dapibus fringilla at vel mi.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies rutrum nisi, eget posuere arcu
+              blandit sit amet. Donec consectetur tortor id augue iaculis malesuada.</p>
+            <p>Nullam in maximus mi. Cras quis enim purus. Fusce nec libero id turpis dapibus fringilla at vel mi.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies rutrum nisi, eget posuere arcu
+              blandit sit amet. Donec consectetur tortor id augue iaculis malesuada.</p>
+            <p>Nullam in maximus mi. Cras quis enim purus. Fusce nec libero id turpis dapibus fringilla at vel mi.</p>
+           
+          </div>
+        </div>
+      </div>
+      <div class="user-story-container">
+        <div class="user-story">
+          <div class="image">
+            <img src="../assets/images/ayo-ogunseinde-6W4F62sN_yI-unsplash.jpg" alt="User Image" class="img-fluid">
+          </div>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies rutrum nisi, eget posuere arcu
+              blandit sit amet. Donec consectetur tortor id augue iaculis malesuada.</p>
+            <p>Nullam in maximus mi. Cras quis enim purus. Fusce nec libero id turpis dapibus fringilla at vel mi.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies rutrum nisi, eget posuere arcu
+              blandit sit amet. Donec consectetur tortor id augue iaculis malesuada.</p>
+            <p>Nullam in maximus mi. Cras quis enim purus. Fusce nec libero id turpis dapibus fringilla at vel mi.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies rutrum nisi, eget posuere arcu
+              blandit sit amet. Donec consectetur tortor id augue iaculis malesuada.</p>
+            <p>Nullam in maximus mi. Cras quis enim purus. Fusce nec libero id turpis dapibus fringilla at vel mi.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies rutrum nisi, eget posuere arcu
+              blandit sit amet. Donec consectetur tortor id augue iaculis malesuada.</p>
+            <p>Nullam in maximus mi. Cras quis enim purus. Fusce nec libero id turpis dapibus fringilla at vel mi.</p>
+          </div>
+        </div>
+      </div>
+      <div class="user-story-container">
+        <div class="user-story">
+          <div class="image">
+            <img src="../assets/images/ian-dooley-d1UPkiFd04A-unsplash.jpg" alt="User Image" class="img-fluid">
+          </div>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies rutrum nisi, eget posuere arcu
+              blandit sit amet. Donec consectetur tortor id augue iaculis malesuada.</p>
+            <p>Nullam in maximus mi. Cras quis enim purus. Fusce nec libero id turpis dapibus fringilla at vel mi.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies rutrum nisi, eget posuere arcu
+              blandit sit amet. Donec consectetur tortor id augue iaculis malesuada.</p>
+            <p>Nullam in maximus mi. Cras quis enim purus. Fusce nec libero id turpis dapibus fringilla at vel mi.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies rutrum nisi, eget posuere arcu
+              blandit sit amet. Donec consectetur tortor id augue iaculis malesuada.</p>
+            <p>Nullam in maximus mi. Cras quis enim purus. Fusce nec libero id turpis dapibus fringilla at vel mi.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies rutrum nisi, eget posuere arcu
+              blandit sit amet. Donec consectetur tortor id augue iaculis malesuada.</p>
+            <p>Nullam in maximus mi. Cras quis enim purus. Fusce nec libero id turpis dapibus fringilla at vel mi.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<footer class="footer-main">
+  <div class="container">
+    <div class="row address-main">
+      <div class="col-lg-4 col-sm-12 col-xs-12">
+        <div class="address-box clearfix">
+          <div class="add-icon">
+            <i class="fa fa-location-dot"></i>
+          </div>
+          <div class="add-content">
+            <h5>Address</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut veniam
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-12 col-xs-12">
+        <div class="address-box clearfix">
+          <div class="add-icon">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <div class="add-content">
+            <h5>Phone</h5>
+            <p>
+              +(91) 000000000 <br />
+              +(91) 000000000
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-12 col-xs-12">
+        <div class="address-box clearfix">
+          <div class="add-icon">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <div class="add-content">
+            <h5>Email</h5>
+            <p>
+              <a href="mailto:" style="text-decoration: none"
+                ></a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <!-- Copyright Footer -->
+  <footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a
+          class="btn btn-outline-light btn-floating m-1"
+          href="#!"
+          role="button"
+          ><i class="fab fa-facebook"></i
+        ></a>
+
+        <!-- Twitter -->
+        <a
+          class="btn btn-outline-light btn-floating m-1"
+          href="#!"
+          role="button"
+          ><i class="fab fa-twitter"></i
+        ></a>
+
+        <!-- Google -->
+        <a
+          class="btn btn-outline-light btn-floating m-1"
+          href="#!"
+          role="button"
+          ><i class="fab fa-google"></i
+        ></a>
+
+        <!-- Instagram -->
+        <a
+          class="btn btn-outline-light btn-floating m-1"
+          href="#!"
+          role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div
+      class="text-center p-3"
+      style="background-color: rgba(0, 0, 0, 0.2)"
+    >
+     © 2023 All Rights Reserved.
+    </div>
+    <!-- Copyright -->
+  </footer>
+</footer>
+
+</body>
+</html>
+
+
+
