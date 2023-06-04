@@ -1,88 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="../assets/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-      crossorigin="anonymous"
-    />
 
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-      crossorigin="anonymous"
-    ></script>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wanderlust Chronicles</title>
+  <link rel="stylesheet" type="text/css" href="../assets/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
+
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
-    <div class="container-fluid">
-      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-      <img class="logo" src="../assets/images/logo.PNG" alt="logo">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="blog.html">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="discover.html">Discover</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              More
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="resources.html">Resources</a></li>
-              <li><a class="dropdown-item" href="#">Contact us</a></li>
-              <!-- <li>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </li> -->
-            </ul>
-          </li>
-        </ul>
+  <div class="loader-container">
+    <div>
+      <span class="loader"></span>
+    </div>
+  </div>
+
+  <nav class="sticky">
+    <div>
+      <div class="logo">
+        <img src="/assets/images/logo.PNG">
+      </div>
+
+      <div class="hamburger">
+        <div class="hamburger--container">
+          <div class="hamburger--bars">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="fsmenu">
+        <div class="fsmenu--container">
+          <div class="fsmenu--text-block">
+            <div class="fsmenu--text-container">
+              <ul class="fsmenu--list">
+                <li class="fsmenu--list-element">
+                  <a href="/pages/index.html">
+                    <span>Home</span>
+                  </a>
+                  <div class="fsmenu--scrolling-text">
+                    <span>Home</span><span>Home</span><span>Home</span><span>Home</span><span>Home</span>
+                  </div>
+                  <div class="fsmenu--link-img">
+                    <div class="fsmenu--img-container">
+                      <img src="/assets/images/africa/namibia.jpg">
+                    </div>
+                  </div>
+                </li>
+                <li class="fsmenu--list-element">
+                  <a href="/pages/about-us.html">
+                    <span>About Us</span>
+                  </a>
+                  <div class="fsmenu--scrolling-text">
+                    <span>About Us</span><span>About Us</span><span>About Us</span><span>About Us</span><span>About
+                      Us</span>
+                  </div>
+                  <div class="fsmenu--link-img">
+                    <div class="fsmenu--img-container">
+                      <img src="/assets/images/asia/mongolia.jpg">
+                    </div>
+                  </div>
+                </li>
+                <li class="fsmenu--list-element">
+                  <a href="/pages/discover.html">
+                    <span>Discover</span>
+                  </a>
+                  <div class="fsmenu--scrolling-text">
+                    <span>Discover</span><span>Discover</span><span>Discover</span><span>Discover</span><span>Discover</span>
+                  </div>
+                  <div class="fsmenu--link-img">
+                    <div class="fsmenu--img-container">
+                      <img src="/assets/images/middle East/Jordan.jpg">
+                    </div>
+                  </div>
+                </li>
+                <li class="fsmenu--list-element">
+                  <a href="/pages/blog.html">
+                    <span>Blog</span>
+                  </a>
+                  <div class="fsmenu--scrolling-text">
+                    <span>Blog</span><span>Blog</span><span>Blog</span><span>Blog</span><span>Blog</span>
+                  </div>
+                  <div class="fsmenu--link-img">
+                    <div class="fsmenu--img-container">
+                      <img src="/assets/images/destinations.jpg">
+                    </div>
+                  </div>
+                </li>
+                <li class="fsmenu--list-element">
+                  <a href="/pages/contact-us.html">
+                    <span>Contact</span>
+                  </a>
+                  <div class="fsmenu--scrolling-text">
+                    <span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span>
+                  </div>
+                  <div class="fsmenu--link-img">
+                    <div class="fsmenu--img-container">
+                      <img src="/assets/images/asia/taiwan.jpg">
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </nav>
-  
-     <!-- Hero -->
-     <!-- <div
+
+  <!-- Hero -->
+  <!-- <div
      class="d-flex container-fluid"
      lc-helper="background"
      style="
@@ -134,15 +169,15 @@
         </div>
       </div>
     </div> -->
-    <div class="main-content">
-      <div class="blog-hero-image-container">
+  <div class="main-content">
+    <div class="blog-hero-image-container">
       <div class="blog-hero-image">
         <div class="blog-hero-text">
           <h1>Read Our Stories</h1>
           <p>Get a glimpse of people's experiences</p>
         </div>
-      </div> 
-    </div> 
+      </div>
+    </div>
     <div class="container">
       <div class="user-story-container">
         <div class="user-story">
@@ -150,16 +185,20 @@
             <img src="../assets/images/pexels-daniel-xavier-1239291.jpg" alt="User Image" class="img-fluid">
           </div>
           <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies rutrum nisi, eget posuere arcu
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies rutrum nisi, eget posuere
+              arcu
               blandit sit amet. Donec consectetur tortor id augue iaculis malesuada.</p>
             <p>Nullam in maximus mi. Cras quis enim purus. Fusce nec libero id turpis dapibus fringilla at vel mi.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies rutrum nisi, eget posuere arcu
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies rutrum nisi, eget posuere
+              arcu
               blandit sit amet. Donec consectetur tortor id augue iaculis malesuada.</p>
             <p>Nullam in maximus mi. Cras quis enim purus. Fusce nec libero id turpis dapibus fringilla at vel mi.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies rutrum nisi, eget posuere arcu
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies rutrum nisi, eget posuere
+              arcu
               blandit sit amet. Donec consectetur tortor id augue iaculis malesuada.</p>
             <p>Nullam in maximus mi. Cras quis enim purus. Fusce nec libero id turpis dapibus fringilla at vel mi.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies rutrum nisi, eget posuere arcu
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies rutrum nisi, eget posuere
+              arcu
               blandit sit amet. Donec consectetur tortor id augue iaculis malesuada.</p>
             <p>Nullam in maximus mi. Cras quis enim purus. Fusce nec libero id turpis dapibus fringilla at vel mi.</p>
           </div>
@@ -171,19 +210,23 @@
             <img src="../assets/images/gabriel-silverio-u3WmDyKGsrY-unsplash.jpg" alt="User Image" class="img-fluid">
           </div>
           <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies rutrum nisi, eget posuere arcu
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies rutrum nisi, eget posuere
+              arcu
               blandit sit amet. Donec consectetur tortor id augue iaculis malesuada.</p>
             <p>Nullam in maximus mi. Cras quis enim purus. Fusce nec libero id turpis dapibus fringilla at vel mi.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies rutrum nisi, eget posuere arcu
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies rutrum nisi, eget posuere
+              arcu
               blandit sit amet. Donec consectetur tortor id augue iaculis malesuada.</p>
             <p>Nullam in maximus mi. Cras quis enim purus. Fusce nec libero id turpis dapibus fringilla at vel mi.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies rutrum nisi, eget posuere arcu
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies rutrum nisi, eget posuere
+              arcu
               blandit sit amet. Donec consectetur tortor id augue iaculis malesuada.</p>
             <p>Nullam in maximus mi. Cras quis enim purus. Fusce nec libero id turpis dapibus fringilla at vel mi.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies rutrum nisi, eget posuere arcu
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies rutrum nisi, eget posuere
+              arcu
               blandit sit amet. Donec consectetur tortor id augue iaculis malesuada.</p>
             <p>Nullam in maximus mi. Cras quis enim purus. Fusce nec libero id turpis dapibus fringilla at vel mi.</p>
-           
+
           </div>
         </div>
       </div>
@@ -193,16 +236,20 @@
             <img src="../assets/images/ayo-ogunseinde-6W4F62sN_yI-unsplash.jpg" alt="User Image" class="img-fluid">
           </div>
           <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies rutrum nisi, eget posuere arcu
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies rutrum nisi, eget posuere
+              arcu
               blandit sit amet. Donec consectetur tortor id augue iaculis malesuada.</p>
             <p>Nullam in maximus mi. Cras quis enim purus. Fusce nec libero id turpis dapibus fringilla at vel mi.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies rutrum nisi, eget posuere arcu
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies rutrum nisi, eget posuere
+              arcu
               blandit sit amet. Donec consectetur tortor id augue iaculis malesuada.</p>
             <p>Nullam in maximus mi. Cras quis enim purus. Fusce nec libero id turpis dapibus fringilla at vel mi.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies rutrum nisi, eget posuere arcu
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies rutrum nisi, eget posuere
+              arcu
               blandit sit amet. Donec consectetur tortor id augue iaculis malesuada.</p>
             <p>Nullam in maximus mi. Cras quis enim purus. Fusce nec libero id turpis dapibus fringilla at vel mi.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies rutrum nisi, eget posuere arcu
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies rutrum nisi, eget posuere
+              arcu
               blandit sit amet. Donec consectetur tortor id augue iaculis malesuada.</p>
             <p>Nullam in maximus mi. Cras quis enim purus. Fusce nec libero id turpis dapibus fringilla at vel mi.</p>
           </div>
@@ -214,16 +261,20 @@
             <img src="../assets/images/ian-dooley-d1UPkiFd04A-unsplash.jpg" alt="User Image" class="img-fluid">
           </div>
           <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies rutrum nisi, eget posuere arcu
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies rutrum nisi, eget posuere
+              arcu
               blandit sit amet. Donec consectetur tortor id augue iaculis malesuada.</p>
             <p>Nullam in maximus mi. Cras quis enim purus. Fusce nec libero id turpis dapibus fringilla at vel mi.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies rutrum nisi, eget posuere arcu
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies rutrum nisi, eget posuere
+              arcu
               blandit sit amet. Donec consectetur tortor id augue iaculis malesuada.</p>
             <p>Nullam in maximus mi. Cras quis enim purus. Fusce nec libero id turpis dapibus fringilla at vel mi.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies rutrum nisi, eget posuere arcu
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies rutrum nisi, eget posuere
+              arcu
               blandit sit amet. Donec consectetur tortor id augue iaculis malesuada.</p>
             <p>Nullam in maximus mi. Cras quis enim purus. Fusce nec libero id turpis dapibus fringilla at vel mi.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies rutrum nisi, eget posuere arcu
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies rutrum nisi, eget posuere
+              arcu
               blandit sit amet. Donec consectetur tortor id augue iaculis malesuada.</p>
             <p>Nullam in maximus mi. Cras quis enim purus. Fusce nec libero id turpis dapibus fringilla at vel mi.</p>
           </div>
@@ -232,110 +283,127 @@
     </div>
   </div>
 
-<footer class="footer-main">
-  <div class="container">
-    <div class="row address-main">
-      <div class="col-lg-4 col-sm-12 col-xs-12">
-        <div class="address-box clearfix">
-          <div class="add-icon">
-            <i class="fa fa-location-dot"></i>
-          </div>
-          <div class="add-content">
-            <h5>Address</h5>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor incididunt ut veniam
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-12 col-xs-12">
-        <div class="address-box clearfix">
-          <div class="add-icon">
-            <i class="fa-solid fa-phone"></i>
-          </div>
-          <div class="add-content">
-            <h5>Phone</h5>
-            <p>
-              +(91) 000000000 <br />
-              +(91) 000000000
-            </p>
+  <footer class="footer-main">
+    <div class="container">
+      <div class="row address-main">
+        <div class="col-lg-4 col-sm-12 col-xs-12">
+          <div class="address-box clearfix">
+            <div class="add-icon">
+              <i class="fa fa-location-dot"></i>
+            </div>
+            <div class="add-content">
+              <h5>Address</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut veniam
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-4 col-sm-12 col-xs-12">
-        <div class="address-box clearfix">
-          <div class="add-icon">
-            <i class="fa-solid fa-envelope"></i>
+        <div class="col-lg-4 col-sm-12 col-xs-12">
+          <div class="address-box clearfix">
+            <div class="add-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="add-content">
+              <h5>Phone</h5>
+              <p>
+                +(91) 000000000 <br />
+                +(91) 000000000
+              </p>
+            </div>
           </div>
-          <div class="add-content">
-            <h5>Email</h5>
-            <p>
-              <a href="mailto:" style="text-decoration: none"
-                ></a
-              >
-            </p>
+        </div>
+        <div class="col-lg-4 col-sm-12 col-xs-12">
+          <div class="address-box clearfix">
+            <div class="add-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="add-content">
+              <h5>Email</h5>
+              <p>
+                <a href="mailto:" style="text-decoration: none"></a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
- <!-- Copyright Footer -->
-  <footer class="bg-dark text-center text-white">
-    <!-- Grid container -->
-    <div class="container p-4 pb-0">
-      <!-- Section: Social media -->
-      <section class="mb-4">
-        <!-- Facebook -->
-        <a
-          class="btn btn-outline-light btn-floating m-1"
-          href="#!"
-          role="button"
-          ><i class="fab fa-facebook"></i
-        ></a>
+    <!-- Copyright Footer -->
+    <footer class="bg-dark text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook"></i></a>
 
-        <!-- Twitter -->
-        <a
-          class="btn btn-outline-light btn-floating m-1"
-          href="#!"
-          role="button"
-          ><i class="fab fa-twitter"></i
-        ></a>
+          <!-- Twitter -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
 
-        <!-- Google -->
-        <a
-          class="btn btn-outline-light btn-floating m-1"
-          href="#!"
-          role="button"
-          ><i class="fab fa-google"></i
-        ></a>
+          <!-- Google -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
 
-        <!-- Instagram -->
-        <a
-          class="btn btn-outline-light btn-floating m-1"
-          href="#!"
-          role="button"
-          ><i class="fab fa-instagram"></i
-        ></a>
-      </section>
-      <!-- Section: Social media -->
-    </div>
-    <!-- Grid container -->
+          <!-- Instagram -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
 
-    <!-- Copyright -->
-    <div
-      class="text-center p-3"
-      style="background-color: rgba(0, 0, 0, 0.2)"
-    >
-     © 2023 All Rights Reserved.
-    </div>
-    <!-- Copyright -->
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2023 All Rights Reserved.
+      </div>
+      <!-- Copyright -->
+    </footer>
   </footer>
-</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+
+      $('.loader-container').fadeIn(300);
+      setTimeout(function () {
+        $('.loader-container').fadeOut(300);
+      }, 2000);
+
+      $('.hamburger').click(function () {
+
+        var $this = $(this);
+
+        if ($this.hasClass('is-active')) {
+          $('.fsmenu, .logo').removeClass('is-active');
+          $('.fsmenu, .logo').addClass('close-menu');
+        } else {
+          $('.fsmenu, .logo').removeClass('close-menu');
+          $('.fsmenu, .logo').addClass('is-active');
+        };
+        $this.toggleClass('is-active');
+      });
+
+      $(".fsmenu--list-element").hover(
+        function () {
+          $(this).addClass('open');
+          $(this).removeClass('is-closing');
+        }, function () {
+          $(this).removeClass('open');
+          $(this).addClass('is-closing');
+        }
+      );
+
+    });
+  </script>
 
 </body>
+
 </html>
-
-
-

@@ -1,189 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="../assets/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-      crossorigin="anonymous"
-    />
 
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
-      <div class="container-fluid">
-        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-        <img class="logo" src="../assets/images/logo.PNG" alt="logo">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="blog.html">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="discover.html">Discover</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                More
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="resources.html">Resources</a></li>
-                <li><a class="dropdown-item" href="#">Contact us</a></li>
-                <!-- <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li> -->
-              </ul>
-            </li>
-          </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wanderlust Chronicles</title>
+  <link rel="stylesheet" type="text/css" href="../assets/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+  <div class="loader-container">
+    <div>
+      <span class="loader"></span>
+    </div>
+  </div>
+
+  <nav class="sticky">
+    <div>
+      <div class="logo">
+        <img src="/assets/images/logo.PNG">
+      </div>
+
+      <div class="hamburger">
+        <div class="hamburger--container">
+          <div class="hamburger--bars">
+          </div>
         </div>
       </div>
-    </nav>
-    <main id="main-content">
-        <div class="main">
-            <div class="resources-hero-image">
-                <div class="hero-text">
-                  <h1>Plan it out</h1>
-                  <p>Practical planning travel tips and recommendations</p>
-                </div>
-              </div>
-              <div>
-                  <hr class="mx-5">
-                <h2 class="header-title text-center py-3">Recommended tours</h2>
-                <hr class="mx-5">
-              </div>
 
-              <div class="container">
-                <div class="row">
-                  <div class="col-lg-3 col-md-5">
-                    <div class="box  pb-4">
-                      <img src="../assets/images/tours/GetYourGuide_company_logo.png" alt="Image" class="img-fluid">
+      <div class="fsmenu">
+        <div class="fsmenu--container">
+          <div class="fsmenu--text-block">
+            <div class="fsmenu--text-container">
+              <ul class="fsmenu--list">
+                <li class="fsmenu--list-element">
+                  <a href="/pages/index.html">
+                    <span>Home</span>
+                  </a>
+                  <div class="fsmenu--scrolling-text">
+                    <span>Home</span><span>Home</span><span>Home</span><span>Home</span><span>Home</span>
+                  </div>
+                  <div class="fsmenu--link-img">
+                    <div class="fsmenu--img-container">
+                      <img src="/assets/images/africa/namibia.jpg">
                     </div>
                   </div>
-                  <div class="col-lg-8 col-md-6">
-                    <div class="box">
-                      <h3>Box Title</h3>
-                      <p>Lorem ipsum dolor sit amet, cons Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, ipsa sed repellat laboriosam libero ab alias cumque quaerat provident placeat animi consequuntur odio ullam nam quis saepe itaque. Atque, provident! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae consequuntur accusamus, laborum qui optio magni animi dolorum tempora excepturi nesciunt unde velit dicta, a iusto corporis. Omnis impedit incidunt ipsum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illum excepturi sit recusandae voluptas perspiciatis nemo commodi molestiae asper quam malesuada. Sed fermentum ipsum et dolor venenatis, vitae commodo lectus tempus.</p>
+                </li>
+                <li class="fsmenu--list-element">
+                  <a href="/pages/about-us.html">
+                    <span>About Us</span>
+                  </a>
+                  <div class="fsmenu--scrolling-text">
+                    <span>About Us</span><span>About Us</span><span>About Us</span><span>About Us</span><span>About
+                      Us</span>
+                  </div>
+                  <div class="fsmenu--link-img">
+                    <div class="fsmenu--img-container">
+                      <img src="/assets/images/asia/mongolia.jpg">
                     </div>
                   </div>
-                </div>
-              </div>
-              <div>
-            </div>
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-3 col-md-5">
-                  <div class="box">
-                    <img src="../assets/images/tours/contexttravelcom.jpg" alt="Image" class="img-fluid">
+                </li>
+                <li class="fsmenu--list-element">
+                  <a href="/pages/discover.html">
+                    <span>Discover</span>
+                  </a>
+                  <div class="fsmenu--scrolling-text">
+                    <span>Discover</span><span>Discover</span><span>Discover</span><span>Discover</span><span>Discover</span>
                   </div>
-                </div>
-                <div class="col-lg-8 col-md-6">
-                  <div class="box">
-                    <h3>Box Title</h3>
-                    <p>Lorem ipsum dolor sit amet, cons Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, ipsa sed repellat laboriosam libero ab alias cumque quaerat provident placeat animi consequuntur odio ullam nam quis saepe itaque. Atque, provident! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae consequuntur accusamus, laborum qui optio magni animi dolorum tempora excepturi nesciunt unde velit dicta, a iusto corporis. Omnis impedit incidunt ipsum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illum excepturi sit recusandae voluptas perspiciatis nemo commodi molestiae asper quam malesuada. Sed fermentum ipsum et dolor venenatis, vitae commodo lectus tempus.</p>
+                  <div class="fsmenu--link-img">
+                    <div class="fsmenu--img-container">
+                      <img src="/assets/images/middle East/Jordan.jpg">
+                    </div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div>
-                <hr class="mx-5">
-              <h2 class="header-title text-center py-3">Accomodation</h2>
-              <hr class="mx-5">
-            </div>
-            <div class="container">
-              <div class="row pb-4">
-                <div class="col-lg-3 col-md-5 ">
-                  <div class="box">
-                    <img src="../assets/images/accomodation/unnamed.png" alt="Image" class="img-fluid">
+                </li>
+                <li class="fsmenu--list-element">
+                  <a href="/pages/blog.html">
+                    <span>Blog</span>
+                  </a>
+                  <div class="fsmenu--scrolling-text">
+                    <span>Blog</span><span>Blog</span><span>Blog</span><span>Blog</span><span>Blog</span>
                   </div>
-                </div>
-                <div class="col-lg-8 col-md-6">
-                  <div class="box">
-                    <h3>Box Title</h3>
-                    <p>Lorem ipsum dolor sit amet, cons Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, ipsa sed repellat laboriosam libero ab alias cumque quaerat provident placeat animi consequuntur odio ullam nam quis saepe itaque. Atque, provident! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae consequuntur accusamus, laborum qui optio magni animi dolorum tempora excepturi nesciunt unde velit dicta, a iusto corporis. Omnis impedit incidunt ipsum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illum excepturi sit recusandae voluptas perspiciatis nemo commodi molestiae asper quam malesuada. Sed fermentum ipsum et dolor venenatis, vitae commodo lectus tempus.</p>
+                  <div class="fsmenu--link-img">
+                    <div class="fsmenu--img-container">
+                      <img src="/assets/images/destinations.jpg">
+                    </div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-3 col-md-5">
-                <div class="box">
-                  <img src="../assets/images/accomodation/agoda.avif" alt="Image" class="img-fluid">
-                </div>
-              </div>
-              <div class="col-lg-8 col-md-6">
-                <div class="box">
-                  <h3>Box Title</h3>
-                  <p>Lorem ipsum dolor sit amet, cons Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, ipsa sed repellat laboriosam libero ab alias cumque quaerat provident placeat animi consequuntur odio ullam nam quis saepe itaque. Atque, provident! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae consequuntur accusamus, laborum qui optio magni animi dolorum tempora excepturi nesciunt unde velit dicta, a iusto corporis. Omnis impedit incidunt ipsum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illum excepturi sit recusandae voluptas perspiciatis nemo commodi molestiae asper quam malesuada. Sed fermentum ipsum et dolor venenatis, vitae commodo lectus tempus.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
-          <hr class="mx-5">
-          <h2 class="header-title text-center py-3">Packaging List</h2>
-          <hr class="mx-5">
-          </div>
-        <div class="container">
-          <div class="row pb-4">
-            <div class="col-lg-3 col-md-5 ">
-              <div class="box">
-                <img src="../assets/images/pack/clothing.jpg" alt="Image" class="img-fluid">
-              </div>
-            </div>
-            <div class="col-lg-8 col-md-6">
-              <div class="box">
-                <h3>Box Title</h3>
-                <p>Lorem ipsum dolor sit amet, cons Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, ipsa sed repellat laboriosam libero ab alias cumque quaerat provident placeat animi consequuntur odio ullam nam quis saepe itaque. Atque, provident! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae consequuntur accusamus, laborum qui optio magni animi dolorum tempora excepturi nesciunt unde velit dicta, a iusto corporis. Omnis impedit incidunt ipsum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illum excepturi sit recusandae voluptas perspiciatis nemo commodi molestiae asper quam malesuada. Sed fermentum ipsum et dolor venenatis, vitae commodo lectus tempus.</p>
-              </div>
+                </li>
+                <li class="fsmenu--list-element">
+                  <a href="/pages/contact-us.html">
+                    <span>Contact</span>
+                  </a>
+                  <div class="fsmenu--scrolling-text">
+                    <span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span><span>Contact</span>
+                  </div>
+                  <div class="fsmenu--link-img">
+                    <div class="fsmenu--img-container">
+                      <img src="/assets/images/asia/taiwan.jpg">
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-        <div>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <div class="main">
+      <div class="resources-hero-image">
+        <div class="hero-text">
+          <h1>Plan it out</h1>
+          <p>Practical planning travel tips and recommendations</p>
+        </div>
+      </div>
+      <div>
+        <hr class="mx-5">
+        <h2 class="header-title text-center py-3">Recommended tours</h2>
+        <hr class="mx-5">
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-5">
+            <div class="box  pb-4">
+              <img src="../assets/images/tours/GetYourGuide_company_logo.png" alt="Image" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-6">
+            <div class="box">
+              <h3>Box Title</h3>
+              <p>Lorem ipsum dolor sit amet, cons Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio,
+                ipsa sed repellat laboriosam libero ab alias cumque quaerat provident placeat animi consequuntur odio
+                ullam nam quis saepe itaque. Atque, provident! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Beatae consequuntur accusamus, laborum qui optio magni animi dolorum tempora excepturi nesciunt unde
+                velit dicta, a iusto corporis. Omnis impedit incidunt ipsum? Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Nesciunt illum excepturi sit recusandae voluptas perspiciatis nemo commodi molestiae
+                asper quam malesuada. Sed fermentum ipsum et dolor venenatis, vitae commodo lectus tempus.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-5">
+            <div class="box">
+              <img src="../assets/images/tours/contexttravelcom.jpg" alt="Image" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-6">
+            <div class="box">
+              <h3>Box Title</h3>
+              <p>Lorem ipsum dolor sit amet, cons Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio,
+                ipsa sed repellat laboriosam libero ab alias cumque quaerat provident placeat animi consequuntur odio
+                ullam nam quis saepe itaque. Atque, provident! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Beatae consequuntur accusamus, laborum qui optio magni animi dolorum tempora excepturi nesciunt unde
+                velit dicta, a iusto corporis. Omnis impedit incidunt ipsum? Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Nesciunt illum excepturi sit recusandae voluptas perspiciatis nemo commodi molestiae
+                asper quam malesuada. Sed fermentum ipsum et dolor venenatis, vitae commodo lectus tempus.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <hr class="mx-5">
+        <h2 class="header-title text-center py-3">Accomodation</h2>
+        <hr class="mx-5">
+      </div>
+      <div class="container">
+        <div class="row pb-4">
+          <div class="col-lg-3 col-md-5 ">
+            <div class="box">
+              <img src="../assets/images/accomodation/unnamed.png" alt="Image" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-6">
+            <div class="box">
+              <h3>Box Title</h3>
+              <p>Lorem ipsum dolor sit amet, cons Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio,
+                ipsa sed repellat laboriosam libero ab alias cumque quaerat provident placeat animi consequuntur odio
+                ullam nam quis saepe itaque. Atque, provident! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Beatae consequuntur accusamus, laborum qui optio magni animi dolorum tempora excepturi nesciunt unde
+                velit dicta, a iusto corporis. Omnis impedit incidunt ipsum? Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Nesciunt illum excepturi sit recusandae voluptas perspiciatis nemo commodi molestiae
+                asper quam malesuada. Sed fermentum ipsum et dolor venenatis, vitae commodo lectus tempus.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-5">
+            <div class="box">
+              <img src="../assets/images/accomodation/agoda.avif" alt="Image" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-6">
+            <div class="box">
+              <h3>Box Title</h3>
+              <p>Lorem ipsum dolor sit amet, cons Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio,
+                ipsa sed repellat laboriosam libero ab alias cumque quaerat provident placeat animi consequuntur odio
+                ullam nam quis saepe itaque. Atque, provident! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Beatae consequuntur accusamus, laborum qui optio magni animi dolorum tempora excepturi nesciunt unde
+                velit dicta, a iusto corporis. Omnis impedit incidunt ipsum? Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Nesciunt illum excepturi sit recusandae voluptas perspiciatis nemo commodi molestiae
+                asper quam malesuada. Sed fermentum ipsum et dolor venenatis, vitae commodo lectus tempus.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <hr class="mx-5">
+        <h2 class="header-title text-center py-3">Packaging List</h2>
+        <hr class="mx-5">
+      </div>
+      <div class="container">
+        <div class="row pb-4">
+          <div class="col-lg-3 col-md-5 ">
+            <div class="box">
+              <img src="../assets/images/pack/clothing.jpg" alt="Image" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-6">
+            <div class="box">
+              <h3>Box Title</h3>
+              <p>Lorem ipsum dolor sit amet, cons Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio,
+                ipsa sed repellat laboriosam libero ab alias cumque quaerat provident placeat animi consequuntur odio
+                ullam nam quis saepe itaque. Atque, provident! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Beatae consequuntur accusamus, laborum qui optio magni animi dolorum tempora excepturi nesciunt unde
+                velit dicta, a iusto corporis. Omnis impedit incidunt ipsum? Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Nesciunt illum excepturi sit recusandae voluptas perspiciatis nemo commodi molestiae
+                asper quam malesuada. Sed fermentum ipsum et dolor venenatis, vitae commodo lectus tempus.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
       </div>
       <div class="container">
         <div class="row">
@@ -195,7 +260,13 @@
           <div class="col-lg-8 col-md-6">
             <div class="box">
               <h3>Box Title</h3>
-              <p>Lorem ipsum dolor sit amet, cons Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, ipsa sed repellat laboriosam libero ab alias cumque quaerat provident placeat animi consequuntur odio ullam nam quis saepe itaque. Atque, provident! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae consequuntur accusamus, laborum qui optio magni animi dolorum tempora excepturi nesciunt unde velit dicta, a iusto corporis. Omnis impedit incidunt ipsum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illum excepturi sit recusandae voluptas perspiciatis nemo commodi molestiae asper quam malesuada. Sed fermentum ipsum et dolor venenatis, vitae commodo lectus tempus.</p>
+              <p>Lorem ipsum dolor sit amet, cons Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio,
+                ipsa sed repellat laboriosam libero ab alias cumque quaerat provident placeat animi consequuntur odio
+                ullam nam quis saepe itaque. Atque, provident! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Beatae consequuntur accusamus, laborum qui optio magni animi dolorum tempora excepturi nesciunt unde
+                velit dicta, a iusto corporis. Omnis impedit incidunt ipsum? Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Nesciunt illum excepturi sit recusandae voluptas perspiciatis nemo commodi molestiae
+                asper quam malesuada. Sed fermentum ipsum et dolor venenatis, vitae commodo lectus tempus.</p>
             </div>
           </div>
         </div>
@@ -210,112 +281,135 @@
           <div class="col-lg-8 col-md-6">
             <div class="box">
               <h3>Box Title</h3>
-              <p>Lorem ipsum dolor sit amet, cons Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, ipsa sed repellat laboriosam libero ab alias cumque quaerat provident placeat animi consequuntur odio ullam nam quis saepe itaque. Atque, provident! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae consequuntur accusamus, laborum qui optio magni animi dolorum tempora excepturi nesciunt unde velit dicta, a iusto corporis. Omnis impedit incidunt ipsum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illum excepturi sit recusandae voluptas perspiciatis nemo commodi molestiae asper quam malesuada. Sed fermentum ipsum et dolor venenatis, vitae commodo lectus tempus.</p>
+              <p>Lorem ipsum dolor sit amet, cons Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio,
+                ipsa sed repellat laboriosam libero ab alias cumque quaerat provident placeat animi consequuntur odio
+                ullam nam quis saepe itaque. Atque, provident! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Beatae consequuntur accusamus, laborum qui optio magni animi dolorum tempora excepturi nesciunt unde
+                velit dicta, a iusto corporis. Omnis impedit incidunt ipsum? Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Nesciunt illum excepturi sit recusandae voluptas perspiciatis nemo commodi molestiae
+                asper quam malesuada. Sed fermentum ipsum et dolor venenatis, vitae commodo lectus tempus.</p>
             </div>
           </div>
         </div>
       </div>
-    </main>
-      <footer class="footer-main">
-        <div class="container">
-          <div class="row address-main">
-            <div class="col-lg-4 col-sm-12 col-xs-12">
-              <div class="address-box clearfix">
-                <div class="add-icon">
-                  <i class="fa fa-location-dot"></i>
-                </div>
-                <div class="add-content">
-                  <h5>Address</h5>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut veniam
-                  </p>
-                </div>
-              </div>
+  </main>
+  <footer class="footer-main">
+    <div class="container">
+      <div class="row address-main">
+        <div class="col-lg-4 col-sm-12 col-xs-12">
+          <div class="address-box clearfix">
+            <div class="add-icon">
+              <i class="fa fa-location-dot"></i>
             </div>
-            <div class="col-lg-4 col-sm-12 col-xs-12">
-              <div class="address-box clearfix">
-                <div class="add-icon">
-                  <i class="fa-solid fa-phone"></i>
-                </div>
-                <div class="add-content">
-                  <h5>Phone</h5>
-                  <p>
-                    +(91) 000000000 <br />
-                    +(91) 000000000
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-sm-12 col-xs-12">
-              <div class="address-box clearfix">
-                <div class="add-icon">
-                  <i class="fa-solid fa-envelope"></i>
-                </div>
-                <div class="add-content">
-                  <h5>Email</h5>
-                  <p>
-                    <a href="mailto:" style="text-decoration: none"
-                      ></a
-                    >
-                  </p>
-                </div>
-              </div>
+            <div class="add-content">
+              <h5>Address</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut veniam
+              </p>
             </div>
           </div>
         </div>
-        <!-- Copyright Footer -->
-        <footer class="bg-dark text-center text-white">
-          <!-- Grid container -->
-          <div class="container p-4 pb-0">
-            <!-- Section: Social media -->
-            <section class="mb-4">
-              <!-- Facebook -->
-              <a
-                class="btn btn-outline-light btn-floating m-1"
-                href="#!"
-                role="button"
-                ><i class="fab fa-facebook"></i
-              ></a>
-
-              <!-- Twitter -->
-              <a
-                class="btn btn-outline-light btn-floating m-1"
-                href="#!"
-                role="button"
-                ><i class="fab fa-twitter"></i
-              ></a>
-
-              <!-- Google -->
-              <a
-                class="btn btn-outline-light btn-floating m-1"
-                href="#!"
-                role="button"
-                ><i class="fab fa-google"></i
-              ></a>
-
-              <!-- Instagram -->
-              <a
-                class="btn btn-outline-light btn-floating m-1"
-                href="#!"
-                role="button"
-                ><i class="fab fa-instagram"></i
-              ></a>
-            </section>
-            <!-- Section: Social media -->
+        <div class="col-lg-4 col-sm-12 col-xs-12">
+          <div class="address-box clearfix">
+            <div class="add-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="add-content">
+              <h5>Phone</h5>
+              <p>
+                +(91) 000000000 <br />
+                +(91) 000000000
+              </p>
+            </div>
           </div>
-          <!-- Grid container -->
-
-          <!-- Copyright -->
-          <div
-            class="text-center p-3"
-            style="background-color: rgba(0, 0, 0, 0.2)"
-          >
-           © 2023 All Rights Reserved.
+        </div>
+        <div class="col-lg-4 col-sm-12 col-xs-12">
+          <div class="address-box clearfix">
+            <div class="add-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="add-content">
+              <h5>Email</h5>
+              <p>
+                <a href="mailto:" style="text-decoration: none"></a>
+              </p>
+            </div>
           </div>
-          <!-- Copyright -->
-        </footer>
-      </footer>
-    </main>
-  </body>
+        </div>
+      </div>
+    </div>
+    <!-- Copyright Footer -->
+    <footer class="bg-dark text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook"></i></a>
+
+          <!-- Twitter -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+
+          <!-- Google -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
+
+          <!-- Instagram -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2023 All Rights Reserved.
+      </div>
+      <!-- Copyright -->
+    </footer>
+  </footer>
+  </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+  integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+  integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+<script>
+  $(document).ready(function () {
+
+    $('.loader-container').fadeIn(300);
+    setTimeout(function () {
+      $('.loader-container').fadeOut(300);
+    }, 2000);
+
+    $('.hamburger').click(function () {
+
+      var $this = $(this);
+
+      if ($this.hasClass('is-active')) {
+        $('.fsmenu, .logo').removeClass('is-active');
+        $('.fsmenu, .logo').addClass('close-menu');
+      } else {
+        $('.fsmenu, .logo').removeClass('close-menu');
+        $('.fsmenu, .logo').addClass('is-active');
+      };
+      $this.toggleClass('is-active');
+    });
+
+    $(".fsmenu--list-element").hover(
+      function () {
+        $(this).addClass('open');
+        $(this).removeClass('is-closing');
+      }, function () {
+        $(this).removeClass('open');
+        $(this).addClass('is-closing');
+      }
+    );
+
+  });
+</script>
+
 </html>
