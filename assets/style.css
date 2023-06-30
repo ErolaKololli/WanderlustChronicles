@@ -532,10 +532,7 @@ div::-webkit-scrollbar {
   transform: rotate(90deg) translateZ(-.2px) scale(1.1) translateX(25vh) translateY(-8vh);
 }
 
-/* .scroll-info, header {
-  position: absolute;
-  left: 1rem;
-} */
+
 
 .scroll-info {
   top: 1rem;
@@ -554,7 +551,7 @@ a img {
   max-height: 50vh;
   transition: .5s;
   vertical-align: top;
-  filter: saturate(40%) sepia(30%) hue-rotate(5deg);
+  /* filter: saturate(40%) sepia(30%) hue-rotate(5deg); */
 }
 
 a:hover img {
@@ -1133,3 +1130,16 @@ p a:hover {
     transform: rotate(360deg);
   }
 }
+
+
+
+    .image-container {
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+    .image-container img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
