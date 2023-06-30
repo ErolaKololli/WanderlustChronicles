@@ -1084,6 +1084,7 @@ p a:hover {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -1133,13 +1134,22 @@ p a:hover {
 
 
 
-    .image-container {
-        margin-bottom: 20px;
-        margin-left: 20px;
-    }
+.image-container {
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
 
-    .image-container img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
+.image-container img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#my-tooltip {
+  position: fixed;
+  z-index: 9999;
+  background-color: lightgray;
+  padding: 5px;
+  border-radius: 5px;
+  display: none;
+}

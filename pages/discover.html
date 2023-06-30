@@ -118,7 +118,8 @@
          </div>
       </div>
    </nav>
-
+   
+   <div id="my-tooltip"></div>
    <div class="main">
       <div class="hero-image">
          <div class="hero-text">
@@ -1099,11 +1100,21 @@
 
    <script>
       // Add event listener for click events on the country paths
+      const tooltip = document.querySelector('#my-tooltip');
+
+      /* Add hover event listener to each path */
       document.querySelectorAll('#world-map path').forEach(function (path) {
-         path.addEventListener('click', function () {
-            let countryId = this.id;
-            // Perform actions for the clicked country
-            console.log('Clicked country:', countryId);
+         path.addEventListener('mouseover', function () {
+            let country = this.attributes.title.value;
+
+            tooltip.textContent = country;
+            tooltip.style.display = 'block';
+            tooltip.style.left = (event.pageX - 30) + 'px';
+            tooltip.style.top = (event.pageY - 450) + 'px';
+         });
+
+         path.addEventListener('mouseout', function () {
+            tooltip.style.display = 'none';
          });
       });
    </script>
